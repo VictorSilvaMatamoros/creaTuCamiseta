@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Crea tu camiseta</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header id="header"><h2>Diseña tu propia camisa</h2></header>
+      <main>
+        <div class="titulo" id="titulo">titulo</div>
+        <div class="contenedotimagenPequenia" id="contenedotimagenPequenia"></div>
+        <div class="contenedorimagenGrande" id="contenedorimagenGrande"></div>
+        <div class="nombreimg" id="nombreimg"></div>
+      </main>
+      <aside id="sidebar">
+        Escoge y modifica tu diseño
+        <input type="text" name="title" id="inputTitulo" placeholder="Titulo de 10 caracteres" maxlength="10">
+        <input type="range" name="arribaAbajo" id="arribaAbajo" step="10"/>Eje x
+        
+        <input type="range" id="colorRange" min="0" max="360" value="0">Color
+
+        <input type="range" name="derechaIzquierda" id="derechaIzquierda" step="10" />Eje y
+        <br />
+        <label>Elige un modo:</label>
+        <div>
+          <input type="radio" id="modoClaro" name="modoTema" value="claro" checked />
+          <label for="modoClaro">Claro</label>
+        
+          <input type="radio" id="modoOscuro" name="modoTema" value="oscuro"  />
+          <label for="modoOscuro">Oscuro</label>
+        </div>
+        <img src="img/walker.png" width="80px" height="80px" alt="">
+        <img src="img/survivor.png" width="80px" height="80px"  alt="">
+        <img src="img/voltBoy.png" width="80px" height="80px"  alt="">
+        <img src="img/LestGo!.png" width="80px" height="80px"  alt="">
+      </aside>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

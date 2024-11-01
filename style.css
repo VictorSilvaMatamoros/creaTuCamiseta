@@ -1,0 +1,90 @@
+html, body {
+  height: 100%; 
+  margin: 0; 
+  padding: 0; 
+}
+
+#wrapper {
+  display: grid;
+  grid-template-areas:
+      "cabecera cabecera"
+      "contenido barra"
+      "pie pie";
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 70% 30%;
+  height: 100vh; 
+}
+
+#header {
+  grid-area: cabecera;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  grid-area: contenido;
+  background-image: url('img/white.png'); 
+  background-size: contain; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  padding: 20px;
+}
+
+#sidebar {
+  grid-area: barra;
+  background-color: #444;
+  color: #fff;
+  padding: 20px;
+}
+
+.contenedotimagenPequenia {
+  margin-left: 575px;
+  margin-top: 145px;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 0, 0, 0);
+  display: flex; 
+  text-align: center; 
+  line-height: 40px; 
+  color: white; 
+}
+
+.contenedorimagenGrande {
+  margin-top: 105px;
+  margin-left: 445px;
+  width: 140px;
+  background-color: rgba(255, 0, 0, 0);
+  height: 140px;
+  display: flex; 
+  text-align: center; 
+  line-height: 80px; 
+  color: white; 
+}
+
+.titulo {
+  background-color: rgba(255, 0, 0, 0);
+  position: absolute; 
+  top: 225px; 
+  left: 435px;
+  width: 40px;
+  height: 10px;
+  display: block; 
+  text-align: center; 
+  line-height: 40px; 
+  color: white; 
+}
+
+.imagenEspejo {
+  transform: scaleX(-1);}
+
+#imagenEspejo{
+  transform: scaleX(-1);
+}
+
+
+#colorRange {
+  margin: 20px 0;
+}
+
